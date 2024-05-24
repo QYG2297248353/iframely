@@ -355,7 +355,11 @@ export function fetchUrlsByPageAndSelector(page, selector, options, cb) {
     async.waterfall([
 
         function(cb) {
-            iframelyGetPluginData(page, 'cheerio', findWhitelistRecordFor, cb);
+            iframelyGetPluginData(page, 'cheerio', findWhitelistRecordFor, cb, {
+                proxy: {
+                    proxy_url: CONFIG.PRERENDER_URL
+                }
+            });
         },
 
         function(cheerio, cb) {
