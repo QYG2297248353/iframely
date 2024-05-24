@@ -20,12 +20,13 @@ export default {
 
     tests: [{
         page: "http://www.youku.com/",
-        selector: ".channelcommon_container .pack_pack_cover a"
+        // selector: ".channelcommon_container .pack_pack_cover a"
+        selector: ".pack_short_title a.aplus_clk"
     },
-        "http://v.youku.com/v_show/id_XNDkwNjg2NzQw.html?f=18736842",
-        "http://v.youku.com/v_show/id_XMTY4NDYyMTQ2OA==.html?f=27354669&from=y1.2-3.4.15#paction",
-        "https://v.youku.com/v_show/id_XNDgxNTEzNzk5Mg==.html",
-        "https://v.youku.com/v_show/id_XNDgxNTEzNzk5Mg==.html"
+        // "http://v.youku.com/v_show/id_XNDkwNjg2NzQw.html?f=18736842",
+        // "http://v.youku.com/v_show/id_XMTY4NDYyMTQ2OA==.html?f=27354669&from=y1.2-3.4.15#paction",
+        // "https://v.youku.com/v_show/id_XNDgxNTEzNzk5Mg==.html",
+        // "https://v.youku.com/v_show/id_XNDgxNTEzNzk5Mg==.html"
 
     ]
 };
